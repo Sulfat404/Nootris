@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link:last-child {
+  color: white;
+  padding-right: 40px;
+}
+
+.nav__link:last-child {
+  padding-right: 0;
+}
+

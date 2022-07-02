@@ -1,0 +1,103 @@
+$black: #000000;
+$white: #ffffff;
+$yellow: #FCDA28;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+
+// nav
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $black;
+}
+
+.nav__list {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  color:white;
+  padding-right: 40px;
+}
+
+// header 
+.header {
+  background-color: $yellow;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 152px;
+  color: $white;
+  padding-top: 96px;
+  padding-bottom: 24px;
+}
+
+.motto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 120px;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.submottom {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 96px;
+}
+
+.header__text {
+  margin: 0 auto;
+  width: 1256px;
+}
+
+// price
+
+.price {
+  background-color: $black;
+}
+
+.price__firstLine {
+  color: $white;
+}
+
+.price__title {
+  text-align: center;
+  color: $yellow;
+}
