@@ -1,3 +1,5 @@
+@import "./_components.scss";
+
 $black: #000000;
 $white: #ffffff;
 $yellow: #FCDA28;
@@ -25,12 +27,18 @@ li {
 
 
 // nav
-
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: $black;
+}
+
+.nav__item {
+  padding-right: 40px;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .nav__list {
@@ -40,45 +48,55 @@ li {
 }
 
 .nav__link {
-  color:white;
-  padding-right: 40px;
+  color: $white;
+  &:hover {
+    transition: 0.3s;
+    color:#e2e2e2;
+  }
+}
+
+.cart__wrapper {
+  cursor: pointer;
 }
 
 // header 
 .header {
   background-color: $yellow;
+  position: relative;
 }
 
-.title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 144px;
-  line-height: 152px;
+.wrapper__img {
+  position: absolute;
+  top: 63px;
+  right: 25px;
+  z-index: 10;
+}
+
+.img__nootris {
+  object-fit: cover;
+  height: 841px;
+}
+
+.header__title {
+  position: relative;
   color: $white;
   padding-top: 96px;
   padding-bottom: 24px;
+  z-index: 20;
 }
 
-.motto {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+.header__motto {
+  width: 672px;
   padding-bottom: 120px;
 }
 
-.subtitle {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
+.header__subtitle {
+  padding-bottom: 16px;
 }
 
-.submottom {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+.header__submottom {
+  width: 416px;
+
   padding-bottom: 96px;
 }
 
@@ -88,9 +106,54 @@ li {
 }
 
 // price
+.gallery {
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__item {
+  width: 200px;
+}
+
+.gallery__item_big {
+  width: 480px;
+  margin-right: 111px;
+  margin-left: 111px;
+}
+
+.gallery__img {
+  padding-bottom: 78px;
+  text-align: center;
+  object-fit:contain;
+}
+
+.gallery__img_big {
+  padding-bottom: 45px;
+}
+
+.gallery__description {
+  margin: 0 auto;
+  min-width: 200px;
+  text-align: center;
+  color: $yellow;
+}
+
+.description_big {
+  padding-bottom: 8px;
+  width: 450px;
+}
+
+.gallery__firstLine {
+  color: $white;
+}
 
 .price {
   background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .price__firstLine {
@@ -98,6 +161,30 @@ li {
 }
 
 .price__title {
+  padding-top: 110px;
+  padding-bottom: 85px;
+  width: 812px;
   text-align: center;
   color: $yellow;
+  font-size: 48px;
+  line-height: 57px;
+}
+
+// btn order
+.btn__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn__order {
+  padding: 16px 32px;
+  margin-bottom: 112px;
+  background: $yellow;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn__order:hover, .btn__order:focus {
+  background: #fcb500ee;
+  transition: 0.3s;
 }
