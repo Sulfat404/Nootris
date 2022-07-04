@@ -28,6 +28,10 @@ li {
 
 
 // nav
+.logo__wrapper {
+  margin-top: 7px;
+}
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -59,6 +63,7 @@ li {
 }
 
 .cart__wrapper {
+  position: relative;
   cursor: pointer;
   margin-right: 40px;
 }
@@ -220,4 +225,21 @@ li {
 .btn__order:focus {
   background: #fcb500ee;
   transition: 0.3s;
+}
+
+.counter {
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: #FCB500;
+  border-radius: 50%;
+  color: $black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
