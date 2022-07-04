@@ -18,14 +18,14 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: 0.04px
+  letter-spacing: 0.04px;
 }
 
 .subtitle {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 43px; 
+  line-height: 43px;
 }
 
 .submottom {
@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0.04px
+  letter-spacing: 0.04px;
 }
 
 .description {
