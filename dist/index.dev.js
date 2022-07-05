@@ -1,7 +1,9 @@
 "use strict";
 
 var cart = document.querySelector(".cart__wrapper");
+var btnOrder = document.querySelector(".btn__order");
 cart.addEventListener("click", countAmountOfCLicks);
+btnOrder.addEventListener("click", countAmountOfCLicks);
 var amountOfCLicks = 1;
 var counter = document.createElement("div");
 
